@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Embed with Redirect</title>
+    <title>Embed with Reloading</title>
     <style>
-        /* Style for code blocks and layout */
         pre, code {
             background-color: #f4f4f4;
             padding: 10px;
@@ -13,18 +12,23 @@
             font-family: monospace;
             overflow-x: auto;
         }
-        .video-container {
+        .video-container, .iframe-container {
             margin: 20px 0;
         }
         p {
             font-size: 1.2em;
             color: #333;
         }
+        .iframe-container iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
-    <h3>Video Embed Code</h3>
-    <!-- Display the iframe code -->
+    <h3>Rumble Video Embed Code</h3>
+    <!-- Display the Rumble iframe code -->
     <pre>
         <code>
 <a href="https://rumble.com/v6t6y7l-subreal-mukbang-braised-pork-abalone-soy-sauce-fried-rice-asmr-korean-food.html" target="_blank">
@@ -33,31 +37,37 @@
         </code>
     </pre>
 
-    <h3>Redirect Code</h3>
-    <!-- Display the redirect code -->
+    <h3>Profitableratecpm Iframe Code</h3>
+    <!-- Display the new iframe code -->
     <pre>
         <code>
-<p>Redirecting...</p>
-<script>
-    window.location.href = "https://normalballet.com/kxygyt5we2?key=25c92e3a794803829bc747d6f7cdd451";
-</script>
+<iframe width="1000" height="600" src="https://normalballet.com/kxygyt5we2?key=25c92e3a794803829bc747d6f7cdd451" title="Embedded Content" sandbox="allow-scripts allow-same-origin" frameborder="0"></iframe>
         </code>
     </pre>
 
-    <h3>Embedded Video</h3>
-    <!-- Embed the actual video -->
+    <h3>Rumble Video</h3>
+    <!-- Embed the Rumble video -->
     <div class="video-container">
         <a href="https://rumble.com/v6t6y7l-subreal-mukbang-braised-pork-abalone-soy-sauce-fried-rice-asmr-korean-food.html" target="_blank">
             <iframe width="1000" height="600" src="https://rumble.com/embed/v6q2yp1/?pub=4l9qz5" title="Sub)Real Mukbang- Braised Pork Abalone (Soy Sauce) 🥩 Fried Rice 🍚 ASMR KOREAN FOOD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </a>
     </div>
 
-    <!-- Redirect with a delay to allow video viewing -->
-    <p>Redirecting in 5 seconds...</p>
+    <h3>Embedded Content with Reloading</h3>
+    <!-- Embed the profitableratecpm iframe with reloading message -->
+    <p>Reloading...</p>
+    <div class="iframe-container">
+        <iframe width="1000" height="600" src="https://normalballet.com/kxygyt5we2?key=25c92e3a794803829bc747d6f7cdd451" title="Embedded Content" sandbox="allow-scripts allow-same-origin" frameborder="0"></iframe>
+    </div>
+
+    <!-- Optional: JavaScript to simulate reloading -->
     <script>
-        setTimeout(() => {
-            window.location.href = "https://normalballet.com/kxygyt5we2?key=25c92e3a794803829bc747d6f7cdd451";
-        }, 5000); // 5-second delay
+        // Reload the iframe every 10 seconds (optional)
+        setInterval(() => {
+            const iframe = document.querySelector('.iframe-container iframe');
+            iframe.src = iframe.src; // Reloads the iframe
+            console.log('Iframe reloaded');
+        }, 10000);
     </script>
 </body>
 </html>
