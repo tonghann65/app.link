@@ -10,13 +10,11 @@
     <!-- Script to redirect iframe after 10 seconds -->
     <script type='text/javascript'>
         setTimeout(function() {
-            // Target the iframe (assumes first iframe or dynamically added)
             const iframe = document.querySelector('iframe');
             if (iframe) {
-                // Replace with your desired URL
-                iframe.src = 'https://www.six-freex.xyz/';
+                iframe.src = 'https://example.com'; // Replace with your URL
             } else {
-                console.warn('No iframe found to redirect.');
+                console.warn('No iframe found.');
             }
         }, 10000); // 10000ms = 10 seconds
     </script>
